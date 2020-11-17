@@ -9,27 +9,26 @@ CORS(app)
 
 
 stores = [
-        {
+            {
 
-            'name': 'My Wonderful Store',
-            'items': [ 
-                {
-                'name': 'My Item',
-                'price': 15.99
-                },
-                {
-                'name': 'My Item 2',
-                'price': 15.99
-                },
-                {
-                'name': 'My Item 3',
-                'price': 15.99
-                }
+                'name': 'My Wonderful Store',
+                'items': [ 
+                    {
+                    'name': 'My Item',
+                    'price': 15.99
+                    },
+                    {
+                    'name': 'My Item 2',
+                    'price': 15.99
+                    },
+                    {
+                    'name': 'My Item 3',
+                    'price': 15.99
+                    }
 
-            ]
-        }
-
-]
+                ]
+            }
+        ]
 
 
 #home page of the app
@@ -57,7 +56,6 @@ def get_store(name):
    for store in stores:
        if store['name'] == name:
            return jsonify(store)
-
 
 # GET /store
 @app.route('/store')
