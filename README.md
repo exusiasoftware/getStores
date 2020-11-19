@@ -11,7 +11,7 @@ docker build -t flaskapi .
 Launch a flaskapi deployment:
 
 ``````
-docker run -d -p 5000:5000 --name flaskapi flaskapi:xxx
+docker run -d -p 80:5000 --name flaskapi flaskapi:xxx
 ``````
 Launch web browser type URL: 
 http://localhost:5000
